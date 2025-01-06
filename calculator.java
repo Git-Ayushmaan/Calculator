@@ -12,6 +12,7 @@ public class Calculator{
 	 	System.out.println("Enter choice.");
 		System.out.println("1.Add");
 		System.out.println("2.Subtract");
+		System.out.println("3.Multiply");
 		int choice = sc.nextInt();
 		double result;
 
@@ -24,6 +25,12 @@ public class Calculator{
                 result = subtract(num1, num2);
                 System.out.println("Result: " + result);
                 break;
+		case 3:
+                result = multiply(num1, num2);
+                System.out.println("Result: " + result);
+                break;
+
+		
                
           	default:
                 System.out.println("Invalid choice. Please try again.");
@@ -38,5 +45,7 @@ public class Calculator{
 	public static double subtract(double num1, double num2) {
                 return num1 - num2;
         }
-
+	public static double multiply(double num1, double num2) {
+                return num1 * num2;
+        }
 }
